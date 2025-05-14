@@ -7,10 +7,10 @@ const urlSchema = new mongoose.Schema({
     unique: true,
   },
   short_url: {
-    type: String,
+    type: Number,
     required: true,
     unique: true,
   },
 });
 
-module.exports = mongoose.model("Url", urlSchema);
+module.exports = mongoose.model("Url", urlSchema, "urls");
